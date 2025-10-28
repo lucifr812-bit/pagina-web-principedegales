@@ -503,3 +503,23 @@ body {
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
+
+/* Títulos con línea centrada */
+.title-with-line {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.title-with-line::after {
+    content: '';
+    position: absolute;
+    width: 100px; /* Ajusta el ancho de la línea */
+    height: 4px; /* Ajusta el grosor de la línea */
+    background-color: var(--secondary-color);
+    bottom: -10px; /* Ajusta la distancia entre el título y la línea */
+    left: 50%; /* Posiciona la línea en el centro */
+    transform: translateX(-50%); /* Centra la línea horizontalmente */
+}
