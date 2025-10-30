@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" &&
     $asunto = $_POST['asunto'];
     $mensaje = $_POST['mensaje'];
 
-    $destinario = "grast.morales@complejoprincipedegales.cl";
+    $destinario = "direccion@complejoprincipedegales.cl";
     $asunto = "Nuevo mensaje de contacto de $nombre";
     $cuerpo = "Nombre: $nombre\nAsunto: $asunto \nCorreo: $correo\nMensaje:\n$mensaje";
     $headers = "From: $correo\r\n";
